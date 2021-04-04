@@ -1,0 +1,201 @@
+@import 'utilities.css';
+
+:root{
+    --primary: #3DCFD3;
+    --dark: #161616;
+    --secondary: #070606;
+    --pure: #FFFFFF;
+    --ternary: #898989;
+    --light: #F2F2F2;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+header{
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100% );
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav .left a{
+    text-decoration: none;
+    color: var(--pure);
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .45s ease;
+}
+
+header nav .left a:hover{
+    color: var(--primary);
+}
+
+header nav{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+header nav .branding{
+    margin-right: 3rem;
+}
+
+.man{
+    padding: 3rem 0;
+}
+.man .left img{
+    width: 400px;
+}
+.man .right{
+    color: var(--pure);
+}
+.man .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+.man .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.man .right h1 span{
+    color: #3DCFD3;
+}
+.man .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+.man .right{
+    margin-top: -7rem;
+}
+section{
+    padding: 6rem 0;
+}
+section.about .man2{
+    height: 450px;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+section.about h1 span{
+    color: #3DCFD3;
+}
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+section.about p{
+    font-family: 'Lato', sans-serif;
+    color: #898989;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+section.about .social{
+    display: flex;
+}
+section.about .social a{
+    background: var(--dark);
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all .3s ease-out;
+}
+section.about .social a:hover{
+    background: var(--primary);
+    transition: all .4s ease-in-out
+}
+section.about .social a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.15rem;
+}
+
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+
+.section-heading span{
+    color: var(--primary);
+}
+.section-heading + p{
+    color: var(--ternary);
+    font-family: 'Lato',sans-serif;
+    text-align: center;
+    margin-bottom: 8rem;
+}
+    
+section.services{
+    background: var(--light);
+}
+section.services .container .wrapper{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-column-gap: 1.5rem ;
+    grid-row-gap: 6rem; 
+}
+
+section.services .container .wrapper img{
+    background-color: var(--primary);
+    width: 111px;
+    height: 106px;
+}
+
+section.services .wrapper .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all .45s ease-out;
+}
+
+section.services .wrapper .card img{
+    position: absolute;
+    top: -3.5rem;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+section.services .wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+section.services .wrapper .card p{
+    font-family: 'Lato' , sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+    
+}
+section.services .wrapper .card:hover{
+    background: var(--dark);
+    transition: all .3s ease;
+}
+section.services .wrapper .card:hover h2{
+    color: white;
+}
+section.services .wrapper .card:hover p{
+    color: white;
+}
